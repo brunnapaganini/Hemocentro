@@ -1,3 +1,4 @@
+import { Doador } from "./Doador";
 export class Pessoa {
     protected nome:string;
     protected idade:number;
