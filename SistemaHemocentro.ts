@@ -30,7 +30,7 @@ export class sistemaHemocentro {
   public buscarPorTipoSanguineo(): void {
     const tipoSanguineo = readline.question('Digite o tipo sanguíneo desejado: ');
     console.log('------------------------\nRESULTADO DA BUSCA:\n------------------------');
-    console.log('NOME             | IDADE | PESO | TIPO SANGUÍNEO | ÚLTIMA DOAÇÃO');
+    console.log('NOME | IDADE | PESO | TIPO SANGUÍNEO | ÚLTIMA DOAÇÃO');
     console.log('-----------------------------------------------------------------');
     for (const doador of this.doadores) {
       if (doador.getTipoSanguineo() === tipoSanguineo) {
@@ -43,7 +43,7 @@ export class sistemaHemocentro {
   public buscarPorDataUltimaDoacao(): void{
      const data = readline.question('Digite a data que deseja: ');
     console.log('------------------------\nRESULTADO DA BUSCA:\n------------------------');
-    console.log('NOME             | IDADE | PESO | TIPO SANGUÍNEO | ÚLTIMA DOAÇÃO');
+    console.log('NOME | IDADE | PESO | TIPO SANGUÍNEO | ÚLTIMA DOAÇÃO');
     console.log('-----------------------------------------------------------------');
     for (const doador of this.doadores) {
       if (doador.getDataUltimaDoacao() === data) {
@@ -54,4 +54,5 @@ export class sistemaHemocentro {
   }
 
 }    
+
 
