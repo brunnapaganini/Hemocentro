@@ -10,7 +10,7 @@ export class Pessoa {
         this.peso = peso
     }
 
-    mostrarInfo():string{
+    mostrarInfo():string{ ///// Metodo para mostrar informações de Doador
         return `${this.nome} | ${this.idade} | ${this.peso}`
     }
 

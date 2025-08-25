@@ -10,7 +10,7 @@ export class Doador extends Pessoa{
         this.dataUltimaDoacao = dataUltimaDoacao
     }
 
-    mostrarInfo():string{
+    mostrarInfo():string{ //// Para mostrar informação de doadores
         return `${this.nome} | ${this.idade} | ${this.peso} | ${this.tipoSanguineo} | ${this.dataUltimaDoacao}`
     }
 
@@ -18,7 +18,7 @@ export class Doador extends Pessoa{
         return this.tipoSanguineo
     }
 
-    getDataUltimaDoacao():string{
+    getDataUltimaDoacao():string{  
         return this.dataUltimaDoacao
     }
 }
